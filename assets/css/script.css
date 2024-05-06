@@ -1,0 +1,333 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+/* ==========================================Header==================================== */
+header {
+    background-color: #edeef3;
+
+    .row {
+
+        .logo-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            div:first-child {
+                border-right: 1px solid #ccc;
+                text-align: center;
+
+            }
+
+            div:nth-child(2) {
+
+                text-align: start;
+
+                .icon {
+                    background-image: url(../icons/dot-menu.svg);
+                    background-size: contain;
+                    width: 16px;
+                    height: 16px;
+                    background-repeat: no-repeat;
+                    margin-left: 10px;
+
+                }
+
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .search {
+            display: flex;
+            height: 100%;
+
+            i {
+                cursor: pointer;
+            }
+
+            input {
+                width: 250px;
+            }
+        }
+
+        .pages {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-left: 20px;
+                    list-style: none;
+                    position: relative;
+
+                    &:hover ul {
+                        opacity: 1;
+                        visibility: visible;
+                        margin-top: 0;
+                    }
+
+                    ul {
+                        position: absolute;
+                        content: "";
+                        width: 200px;
+                        display: flex;
+                        flex-direction: column;
+                        left: -70px;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: all ease .4s;
+                        margin-top: 100px;
+                        z-index: 1;
+
+                        li {
+                            padding: 0;
+                            height: 36px;
+
+                            a {
+                                height: 100%;
+                                width: 100%;
+                                display: inline-block;
+                                padding: 0 10px;
+                                position: relative;
+                                transition: all ease .4s;
+
+
+                                &::after {
+                                    transition: all ease .4s;
+                                    content: "";
+                                    position: absolute;
+                                    width: 0;
+                                    inset: 0;
+                                    height: 100%;
+                                    left: auto;
+                                    right: auto;
+                                    right: 0;
+
+                                }
+                            }
+
+                            &:hover a::after {
+
+                                left: 0;
+                                right: auto;
+                                width: 100%;
+                                background-color: #2b4eff;
+
+
+                            }
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #0e1133;
+                    }
+
+                    a:hover {
+                        color: white;
+                    }
+
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .shbtn {
+            .search {
+                width: 280px;
+                height: 50px;
+                border: 2px solid #ddd;
+                flex-grow: 1;
+                display: flex;
+                padding: 5px;
+                background-color: #fff;
+
+                input {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    flex-grow: 1;
+                }
+
+                .bucket {
+                    height: 20px;
+                    width: 20px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    border: none;
+                    background-color: #fff;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: "2";
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background-color: #2b4eff;
+                        color: #fff;
+                        top: -10px;
+                        right: -10px;
+                        font-size: 11px;
+                    }
+
+                    &:hover::after {
+                        background-color: #0e1133;
+                    }
+                }
+            }
+
+            button {
+                width: 120px;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                }
+            }
+        }
+
+
+        .posRelative {
+            position: relative;
+        }
+
+        .posAbs {
+            position: absolute;
+            right: 10px;
+            width: 20px;
+        }
+
+        .basket-count {
+            position: absolute;
+            right: 220px;
+            top: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+/* ==========================================Header==================================== */
+
+
+
+/* ============================================FOOOTER================================ */
+footer {
+    position: relative;
+
+    .get-started {
+        position: absolute;
+        top: -15%;
+        left: 37%;
+    }
+
+    li .nav-link {
+        color: #a1a2ab;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+
+    input {
+        border-radius: 4px 0 0 4px !important;
+        padding: 15px 20px !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border: none;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    .footer-button {
+        border-radius: 0 !important;
+        padding: 15px 25px !important;
+        background-color: #2b4eff;
+    }
+
+    .social-media-icon-facebook,
+    .social-media-icon-twitter,
+    .social-media-icon-pinterest {
+        border: none;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    /* ===============================Faceboook=================================== */
+    .social-media-icon-facebook {
+        background-color: #2b4eff;
+        transition: 0.8s;
+
+        i {
+            color: white;
+            transition: 0.6s;
+        }
+    }
+
+    .social-media-icon-facebook:hover {
+        background-color: transparent;
+        border: 1px solid #2b4eff;
+
+        i {
+            color: #2b4eff;
+        }
+    }
+
+    /* ===============================Twitter=================================== */
+
+    .social-media-icon-twitter {
+        background-color: #08a0e9;
+        transition: 0.8s;
+
+        i {
+            color: white;
+            transition: 0.6s;
+        }
+    }
+
+    .social-media-icon-twitter:hover {
+        background-color: transparent;
+        border: 1px solid #08a0e9;
+
+        i {
+            color: #08a0e9;
+        }
+    }
+
+    /* ===============================Pinterest=================================== */
+    .social-media-icon-pinterest {
+        background-color: rgb(255, 68, 68);
+        transition: 0.8s;
+
+        i {
+            color: white;
+            transition: 0.6s;
+        }
+    }
+
+    .social-media-icon-pinterest:hover {
+        background-color: transparent;
+        border: 1px solid rgb(255, 68, 68);
+
+        i {
+            color: rgb(255, 68, 68);
+        }
+    }
+}
+
+/* ============================================FOOOTER================================ */

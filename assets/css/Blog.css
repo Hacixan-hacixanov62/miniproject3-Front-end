@@ -1,0 +1,228 @@
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind", sans-serif;
+}
+
+.blue-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.myWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myWrapper .myContainer {
+    width: 75%;
+}
+
+.myWrapper .myContainer .row .card .card-text {
+    padding: 0;
+    margin: 0;
+}
+
+.myWrapper .myContainer .row .card {
+    border: none;
+    -webkit-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
+}
+
+.myWrapper .myContainer .row .card .card-body .desing-button {
+    text-decoration: none;
+    background: rgba(48, 168, 32, .1);
+    color: #30a820;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 6px;
+    transition: 0.3s;
+    padding: 4px;
+    border: 4px;
+    margin-left: 2px;
+}
+
+.myWrapper .myContainer .row .card .card-body .desing-button:hover {
+    text-decoration: none;
+    background: #20a837;
+    color: white;
+    border-radius: 4px;
+}
+
+.myWrapper .myContainer .row .card .card-body .card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    transition: 0.3s;
+}
+
+.myWrapper .myContainer .row .card .card-body .card-title:hover {
+    color: blue;
+}
+
+.myWrapper .myContainer .row .card .card-body .card-body-last-elements {
+    img {
+        border-radius: 50%;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 14px;
+        color: #53545b;
+        font-weight: 500;
+    }
+
+
+}
+
+.myWrapper .myContainer .pagination-elements {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .pagination-list {
+        text-decoration: none;
+        color: black;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+        text-align: center;
+        border-radius: 4px;
+        transition: 0.6s;
+    }
+
+    .pagination-list:hover {
+        background: #2b4eff;
+    }
+
+    .pagination-list:hover a {
+        color: white;
+    }
+
+    .active {
+        background: #2b4eff;
+        color: white;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    i {
+        font-size: 13px;
+    }
+}
+
+.left-side {
+    margin-left: 60px;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+    }
+
+    .input-desing:focus {
+        border: 2px solid blue;
+        line-height: 56px;
+        background: #f3f4f8;
+        border-radius: 4px;
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        font-size: 13px;
+    }
+
+    p {
+        color: #53545b;
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .category-list a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #53545b;
+        transition: 0.5s;
+    }
+
+    .category-list::marker {
+        color: #adaeba;
+        transition: 0.5s;
+    }
+
+    .category-list:hover::marker {
+        color: #2b4eff;
+    }
+
+    .category-list:hover a {
+        color: #2b4eff;
+    }
+
+    .tags-part {
+        button {
+            font-size: 14px;
+            color: #53545b;
+            border-radius: 4px;
+            padding: 5px;
+            border: none;
+            transition: 0.6s;
+        }
+
+        button:hover {
+            background-color: #2b4eff;
+            color: white;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .myWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .myWrapper .myContainer {
+        width: 95%;
+    }
+
+    .left-side {
+        margin-left: 0;
+    }
+
+    .left-side input {
+        width: 100%;
+    }
+}
