@@ -5,7 +5,7 @@ header.innerHTML = `
 <div class="row col-12">
 <div class="col-3 logo-menu ">
   <div class="col-6 mt-4">
-    <img src="../img/logo.png" alt="">
+    <img src="./assets/images/logo.png" alt="">
   </div>
   <div class="col-6 mt-4">
     <!-- <div class="icon"></div>
@@ -18,11 +18,10 @@ header.innerHTML = `
     <li>
       <a href="index.html" class="">Home</a>
       <ul class="list-group">
-        <li class="list-group-item"><a href="#" class="text-white">Cras justo odio</a></li>
-        <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-        <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-        <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-        <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+        <li class="list-group-item"><a href="#">Home style 1</a></li>
+        <li class="list-group-item"><a href="#">Home style 2</a></li>
+        <li class="list-group-item"><a href="#">Home style 3</a></li>
+
       </ul>
     </li>
     <li><a href="#">Courses</a></li>
@@ -36,7 +35,7 @@ header.innerHTML = `
   <div class='posRelative d-flex align-items-center'>    
     <i class="fa-solid fa-magnifying-glass mx-3" style=""></i>
     <input type="text" placeholder="Search..">
-    <img src="../img/cart[1].svg" alt="" class='posAbs'>
+    <img src="./assets/images/cart[1].svg" alt="" class='posAbs'>
     </div>
     <a class="basket-count">2</a>
   </div>
@@ -119,7 +118,7 @@ footer.innerHTML = `
     </div>
 
     <div class="d-flex flex-column  justify-content-between py-4 my-4 border-top">
-        <p class="text-center" style="color: white;">© 2024 Company, Inc. All rights reserved.</p>
+        <p class="text-center" style="color: white;">© 2024 Company, Inc. All rights reserved. Design By Theme Pure</p>
         <ul class="list-unstyled d-flex">
             <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
                         <use xlink:href="#twitter"></use>

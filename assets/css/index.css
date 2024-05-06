@@ -42,7 +42,7 @@
 
 .explore-hover-effect:hover {
     background: #2b4eff;
-    color: white;
+     color: white; 
 }
 
 .more-info {
@@ -210,6 +210,25 @@
     border: 4px;
     margin-left: 2px;
 }
+
+.wrapper-explore .container-explore .row .card .card-body  {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #card-category .course_card_body {
+    padding-top: 1.5rem;
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+  #card-category .course_card_body .course_lesson_and_rating {
+    color: rgb(80, 79, 79);
+    margin-bottom: 1rem;
+  }
+  #card-category .course_card_body .course_lesson_and_rating i.fas.fa-star {color: #ff9c43;}
+  s#card-category .course_card_body h3.course_name {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
 
 .wrapper-explore .container-explore .row .card .card-body .desing-button:hover {
     text-decoration: none;
