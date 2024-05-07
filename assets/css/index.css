@@ -214,7 +214,7 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            background: #30a820;
+            background: #16ae16;
             color: white;
             font-size: 14px;
             font-weight: 500;
@@ -234,10 +234,9 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            background: #30a820;
+            background: #209c26;
             color: white;
         }
-
 
         .wrapper-explore .container-explore .row .card .card-body {
             padding-left: 2rem;
