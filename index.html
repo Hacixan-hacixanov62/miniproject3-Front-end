@@ -22,7 +22,57 @@
 </head>
 
 <body>
-  <header>
+  <header class="sticky-top">
+    <div class="row col-12">
+      <div class="col-3 logo-menu ">
+        <div class="col-6 mt-4">
+          <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="col-6 mt-4 category">
+          <!-- <div class="icon"></div>
+                <span class="mx-5">Category</span> -->
+          <i class="fa-solid fa-bars mt-2 mx-3"></i>Category
+          <ul class="list-category">
+            <li class="list-category-item"><a href="#">English Learning</a></li>
+            <li class="list-category-item"><a href="#">Web Development</a></li>
+            <li class="list-category-item"><a href="#">Logo Design</a></li>
+            <li class="list-category-item"><a href="#">Motion Graphics</a></li>
+            <li class="list-category-item"><a href="#">Video Edition</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-5 pages">
+        <ul class="pagesul" style="gap: 20px;margin-top: 30px">
+          <li>
+            <a href="index.html" class="">Home</a>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#">Home style 1</a></li>
+              <li class="list-group-item"><a href="#">Home style 2</a></li>
+              <li class="list-group-item"><a href="#">Home style 3</a></li>
+
+            </ul>
+          </li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-4 shbtn mt-3 d-flex">
+        <div class="search d-flex align-items-center ">
+          <div class='posRelative d-flex align-items-center'>
+            <i class="fa-solid fa-magnifying-glass mx-3" style=""></i>
+            <input type="text" placeholder="Search..">
+            <img src="./assets/images/cart[1].svg" alt="" class='posAbs'>
+          </div>
+          <a class="basket-count">2</a>
+        </div>
+        <button class="btn btn-primary mx-3">Try for free</button>
+      </div>
+    </div>
+    <div class="sidebar-btn">
+      <button> <i class="fa-solid fa-bars"></i></button>
+    </div>
 
   </header>
 
@@ -45,7 +95,7 @@
                 </h4>
               </div>
               <div>
-                <button class="all-course-button">View all course</button>
+                <button class="all-course-button mb-5">View all course</button>
               </div>
             </div>
           </div>
@@ -275,7 +325,9 @@
     </div>
     </div>
   </section>
-
+  <!-- 
+  
+==============================================Cards================================ -->
   <section class="mb-5">
     <div class="wrapper-explore">
       <div class="container-explore">
@@ -306,21 +358,25 @@
                 <img src="./assets/images/course-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <a class="card-text desing-button">Art & Design</a>
-                  <span>
-                    <i class="fas fa-book"></i>
-                    43 Lesson
-                  </span>
-                  <span>
-                    <i class="fas fa-star"></i> 4.5 
-                    <span class="rating_count">(44)</span>
-                  </span>
+
+                  <!-- hamısında div aç içinə at -->
+                  <div class="d-flex justify-content-between">
+                    <span>
+                      <i class="fas fa-book"></i>
+                      43 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 4.5
+                      <span class="rating_count">(44)</span>
+                    </span>
+                  </div>
+
                   <p class="card-title mt-2 mb-5">Become a product Manager learn the skills & job.
                   </p>
 
                   <div class="d-flex align-items-center justify-content-between card-body-last-elements">
                     <div>
-                      <img src="./assets/images/teacher-1.jpg" alt=""
-                        class="me-2">
+                      <img src="./assets/images/teacher-1.jpg" alt="" class="me-2">
                       <span>Jim Séchen</span>
                     </div>
                     <div>
@@ -332,9 +388,10 @@
             </div>
             <div class="col-12 col-sm-12 col-md-4">
               <div class="card" style="border: none;">
-                <img src="https://ng-educal-by.netlify.app/assets/img/blog/blog-1.jpg" class="card-img-top" alt="...">
+                <img src="https://ng-educal-by.netlify.app/assets/img/course/course-2.jpg" class="card-img-top"
+                  alt="...">
                 <div class="card-body">
-                  <a class="card-text desing-button">Art & Design</a>
+                  <a class="card-text desing-button">UX Design</a>
                   <span>
                     <i class="fas fa-book"></i>
                     10 Lesson
@@ -347,8 +404,7 @@
                   </p>
                   <div class="d-flex align-items-center justify-content-between card-body-last-elements">
                     <div>
-                      <img src="./assets/images/teacher-2.jpg" alt=""
-                        class="me-2">
+                      <img src="./assets/images/teacher-2.jpg" alt="" class="me-2">
                       <span>Jim Séchen</span>
                     </div>
                     <div>
@@ -362,7 +418,7 @@
               <div class="card" style="border: none;">
                 <img src="https://ng-educal-by.netlify.app/assets/img/blog/blog-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a class="card-text desing-button">Art & Design</a>
+                  <a class="card-text desing-button">Development</a>
                   <span>
                     <i class="fas fa-book"></i>
                     35 Lesson
@@ -377,8 +433,7 @@
 
                   <div class="d-flex align-items-center justify-content-between card-body-last-elements">
                     <div>
-                      <img src="./assets/images/teacher-3.jpg" alt=""
-                        class="me-2">
+                      <img src="./assets/images/teacher-3.jpg" alt="" class="me-2">
                       <span>Jim Séchen</span>
                     </div>
                     <div>
@@ -395,7 +450,7 @@
               <div class="card" style="border: none;">
                 <img src="https://ng-educal-by.netlify.app/assets/img/blog/blog-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a class="card-text desing-button">Art & Design</a>
+                  <a class="card-text desing-button">Development</a>
                   <span>
                     <i class="fas fa-book"></i>
                     60 Lesson
@@ -410,8 +465,7 @@
 
                   <div class="d-flex align-items-center justify-content-between card-body-last-elements">
                     <div>
-                      <img src="./assets/images/teacher-4.jpg" alt=""
-                        class="me-2">
+                      <img src="./assets/images/teacher-4.jpg" alt="" class="me-2">
                       <span>Jim Séchen</span>
                     </div>
                     <div>
@@ -425,7 +479,7 @@
               <div class="card" style="border: none;">
                 <img src="https://ng-educal-by.netlify.app/assets/img/blog/blog-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a class="card-text desing-button">Art & Design</a>
+                  <a class="card-text desing-button">Marketing</a>
                   <span>
                     <i class="fas fa-book"></i>
                     28 Lesson
@@ -440,8 +494,7 @@
 
                   <div class="d-flex align-items-center justify-content-between card-body-last-elements">
                     <div>
-                      <img src="./assets/images/teacher-5.jpg" alt=""
-                        class="me-2">
+                      <img src="./assets/images/teacher-5.jpg" alt="" class="me-2">
                       <span>Jim Séchen</span>
                     </div>
                     <div>
@@ -455,7 +508,7 @@
               <div class="card" style="border: none;">
                 <img src="https://ng-educal-by.netlify.app/assets/img/blog/blog-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <a class="card-text desing-button">Art & Design</a>
+                  <a class="card-text desing-button">Data Scinece</a>
                   <span>
                     <i class="fas fa-book"></i>
                     38 Lesson
@@ -470,8 +523,7 @@
 
                   <div class="d-flex align-items-center justify-content-between card-body-last-elements">
                     <div>
-                      <img src="./assets/images/teacher-6.jpg" alt=""
-                        class="me-2">
+                      <img src="./assets/images/teacher-6.jpg" alt="" class="me-2">
                       <span>Jim Séchen</span>
                     </div>
                     <div>
@@ -487,7 +539,10 @@
     </div>
     </div>
   </section>
+  <!-- 
+==============================================Cards================================ -->
 
+  <!--==========================================Current Events===============================-->
   <section class="mb-5">
     <div class="text-center">
       <h1>Current Events</h1>
@@ -503,7 +558,7 @@
           -webkit-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           -moz-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);">
-            <div class="card">
+            <div class="card" style="border: none;">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
@@ -528,7 +583,7 @@
           -webkit-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           -moz-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);">
-            <div class="card">
+            <div class="card" style="border: none;">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
@@ -553,7 +608,7 @@
           -webkit-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           -moz-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);">
-            <div class="card">
+            <div class="card" style="border: none;">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
@@ -578,7 +633,7 @@
           -webkit-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           -moz-box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 1px 18px 23px 0px rgba(0, 0, 0, 0.09);">
-            <div class="card">
+            <div class="card" style="border: none;">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <div>
@@ -604,25 +659,180 @@
   </section>
 
 
+  <section class="mb-5 mt-5">
+    <div class="text-center">
+      <h1>Simple</h1>
+      <h1>All Inclusive Pricing</h1>
+      <div>No contracts. No surprise fees.</div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <p class="mt-3">Monthly Plan</p>
+      <button style="background-color: #2b4eff;">Annual Plan</button>
+    </div>
+    <div class="current-wrapper mt-5">
+      <div class="current-container">
+        <div class="row gold-diamond">
+          <div class="col-12 col-sm-12 col-md-6">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div>
+                  <h3 class="card-title">Gold</h3>
+                  <p class="card-text">Perfect for small marketing teams</p>
+                  <h4 class="card-title mb-4 mt-4"><span>$59</span>.99 / annually</h4>
+                </div>
+
+                <div>
+                  <ul style="padding: 0;">
+                    <li class="list-group-item mb-1"><a href="#"><i class="fa-solid fa-check"></i>Course Discussions</a>
+                    </li>
+                    <li class="list-group-item mb-1"><a href="#"><i class="fa-solid fa-check"></i>Content Library</a>
+                    </li>
+                    <li class="list-group-item mb-4"><a href="#"><i class="fa-solid fa-check"></i>1-hour Mentorship</a>
+                    </li>
+                    <button style="background-color: #2b4eff;">Get started</button>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div>
+                  <h3 class="card-title">Gold</h3>
+                  <p class="card-text">Perfect for small marketing teams</p>
+                  <h4 class="card-title mb-4 mt-4"><span>$59</span>.99 / annually</h4>
+                </div>
+
+                <div>
+                  <ul style="padding: 0;">
+                    <li class="list-group-item mb-2"><a href="#"><i class="fa-solid fa-check"></i>Course Discussions</a>
+                    </li>
+                    <li class="list-group-item mb-2"><a href="#"><i class="fa-solid fa-check"></i>Content Library</a>
+                    </li>
+                    <li class="list-group-item mb-2"><a href="#"><i class="fa-solid fa-check"></i>1-hour Mentorship</a>
+                    </li>
+                    <li class="list-group-item mb-4"><a href="#"><i class="fa-solid fa-check"></i>Online Course</a>
+                    </li>
+                    <button style="background-color: #2b4eff;">Get started</button>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================================Current Events===============================-->
 
 
 
 
 
   <footer style="background-color: #1c1f3f;">
-
-
     <!-- <div class="get-started">
         <div class="box">
 
         </div>
     </div> -->
-  </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/script.js"></script>
+
+
+
+    <footer class="py-5">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-3 mb-3">
+              <ul class="nav">
+                <img src="https://ng-educal-by.netlify.app/assets/img/logo/logo-2.png" alt=""
+                  style="object-fit: contain;" class="mb-4">
+                <p style="padding:0 ;margin: 0;color:  #a1a2ab;">
+                  Great lesson ideas and lesson plans for ESL teachers! Educators can customize lesson
+                  plans to best.
+                </p>
+              </ul>
+
+              <div class="mt-3">
+                <button class="social-media-icon-facebook"><i class="fa-brands fa-facebook-f"></i></button>
+                <button class="social-media-icon-twitter mx-1"><i class="fa-brands fa-twitter"></i></button>
+                <button class="social-media-icon-pinterest"><i class="fa-brands fa-pinterest-p"></i></button>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-2 offset-md-1  mb-3">
+              <h5>Company</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Courses</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Events</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Instructor</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Career</a>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Become a Teacher</a>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-3 mb-3">
+              <h5>Platform</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Browse Library</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Library</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Partners</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">News & Blogs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tutorials</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex form-elemets">
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Your email address">
+                  <button class="btn btn-primary footer-button" type="button"><i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </form>
+              <div>
+                <p style="margin: 0;padding: 0;color: white;">Get the latest news and updates right at your
+                  inbox.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column  justify-content-between py-4 my-4 border-top">
+            <p class="text-center" style="color: white;">© 2024 Company, Inc. All rights reserved. Design By Theme Pure
+            </p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#twitter"></use>
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram"></use>
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
