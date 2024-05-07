@@ -1,5 +1,5 @@
-const footer = document.querySelector('footer')
-const header = document.querySelector('header');
+// const footer = document.querySelector('footer')
+// const header = document.querySelector('header');
 
 // header.innerHTML = `
 // <div class="row col-12">

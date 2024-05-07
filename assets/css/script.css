@@ -209,7 +209,7 @@ header {
 
         .posAbs {
             position: absolute;
-            right: 10px;
+            right: -24px;
             width: 20px;
         }
 
