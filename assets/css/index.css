@@ -394,3 +394,53 @@
                 }
             }
         }
+
+
+
+        #guide {
+            margin-top: 12%;
+        }
+
+
+        .py-5 {
+            margin-top: -2%;
+        }
+
+
+        #guide .own_guid_card {
+            padding: 2.5rem 5rem;
+            background: #2b4eff;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            margin-top: -5rem;
+            z-index: 3;
+        }
+
+        #guide .own_guid_card .own_card_content {
+            flex-wrap: wrap;
+        }
+
+        #guide .own_guid_card .cicle_shape {
+            right: -163px;
+            bottom: -90px;
+        }
+
+        #guide .own_guid_card h3 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--color-light, #fff);
+            font-weight: 600;
+            z-index: 3;
+        }
+
+        #guide .own_guid_card .btn {
+            z-index: 2;
+            background: var(--color-light, #fff);
+            padding: 1rem 2.5rem;
+        }
+
+        #guide .own_guid_card .btn:focus,
+        #guide .own_guid_card .btn:hover {
+            box-shadow: var(--shadow);
+            color: var(--color, #0e1133);
+        }
