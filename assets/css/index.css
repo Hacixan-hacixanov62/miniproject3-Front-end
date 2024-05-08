@@ -14,6 +14,17 @@
         }
 
 
+        .link {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .link:hover {
+            color: #2b4eff !important;
+
+        }
+
+
         .explore-cards {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -295,10 +306,56 @@
             width: 65%;
         }
 
+
         @media (max-width: 768px) {
             .current-container {
                 width: 95%;
             }
+        }
+
+
+        .link{
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .link:hover{
+            color: #2b4eff !important;
+
+        }
+
+
+        
+        .link1{
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .link1:hover{
+            color: #2b4eff !important;
+
+        }
+
+
+        .link2{
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .link2:hover{
+            color: #2b4eff !important;
+
+        }
+
+
+        .link3{
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .link3:hover{
+            color: #2b4eff !important;
+
         }
 
 
@@ -459,7 +516,7 @@
             border: none;
         }
 
-        .view-courses{
+        .view-courses {
             padding: 7px 15px;
             color: #fff;
             background: #2b4eff;

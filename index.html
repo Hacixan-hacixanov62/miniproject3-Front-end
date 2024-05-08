@@ -23,15 +23,70 @@
 
 <body>
   <header class="sticky-top">
-    <div class="row col-12">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="row col-12">
+          <div class="col-3 logo-menu ">
+            <div class="col-6 mt-4">
+              <img src="./assets/images/logo.png" alt="">
+            </div>
+            <div class="col-6 mt-4 category">
+              <!-- <div class="icon"></div>
+                    <span class="mx-5">Category</span>  -->
+              <i class="fa-solid fa-bars mt-2 mx-3"></i>Category
+              <ul class="list-category">
+                <li class="list-category-item"><a href="#">English Learning</a></li>
+                <li class="list-category-item"><a href="#">Web Development</a></li>
+                <li class="list-category-item"><a href="#">Logo Design</a></li>
+                <li class="list-category-item"><a href="#">Motion Graphics</a></li>
+                <li class="list-category-item"><a href="#">Video Edition</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-5 pages">
+            <ul class="pagesul" style="gap: 20px;margin-top: 30px">
+              <li>
+                <a href="index.html" class="">Home</a>
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Home style 1</a></li>
+                  <li class="list-group-item"><a href="#">Home style 2</a></li>
+                  <li class="list-group-item"><a href="#">Home style 3</a></li>
+    
+                </ul>
+              </li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-4 shbtn mt-3 d-flex">
+            <div class="search d-flex align-items-center ">
+              <div class='posRelative d-flex align-items-center'>
+                <i class="fa-solid fa-magnifying-glass mx-3" style=""></i>
+                <input type="text" placeholder="Search..">
+                <img src="./assets/images/cart[1].svg" alt="" class='posAbs'>
+              </div>
+              <a class="basket-count">2</a>
+            </div>
+            <button class="btn btn-primary mx-3">Try for free</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+   <!-- <div class="row col-12">
       <div class="col-3 logo-menu ">
         <div class="col-6 mt-4">
           <img src="./assets/images/logo.png" alt="">
         </div>
         <div class="col-6 mt-4 category">
-          <!-- <div class="icon"></div>
+          <div class="icon"></div>
                 <span class="mx-5">Category</span> -->
-          <i class="fa-solid fa-bars mt-2 mx-3"></i>Category
+          <!--<i class="fa-solid fa-bars mt-2 mx-3"></i>Category
           <ul class="list-category">
             <li class="list-category-item"><a href="#">English Learning</a></li>
             <li class="list-category-item"><a href="#">Web Development</a></li>
@@ -72,7 +127,7 @@
     </div>
     <div class="sidebar-btn">
       <button> <i class="fa-solid fa-bars"></i></button>
-    </div>
+    </div>-->
 
   </header>
 
@@ -141,7 +196,7 @@
             </div>
             <div>Our Popular Courses</div>
           </div>
-          <div style="color: #6d6e75;gap: 5px" class="d-flex align-items-center">
+          <div style="color: #6d6e75;gap: 5px" class="link d-flex align-items-center">
             View all Category <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
               <path fill="currentColor" d="M4 12h12.25L11 6.75l.66-.75l6.5 6.5l-6.5 6.5l-.66-.75L16.25 13H4z" />
             </svg>
@@ -573,7 +628,7 @@
                     <h5 class="card-title">Digital transformation conference</h5>
                   </div>
                   <div>
-                    <div style="color: black;gap: 5px" class="d-flex align-items-center;">
+                    <div style="color: black;gap: 5px" class="link d-flex align-items-center;">
                       <a style="font-size: 14px;">View More</a> <svg xmlns="http://www.w3.org/2000/svg" width="20"
                         height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -598,7 +653,7 @@
                     <h5 class="card-title">World education day conference</h5>
                   </div>
                   <div>
-                    <div style="color: black;gap: 5px" class="d-flex align-items-center;">
+                    <div style="color: black;gap: 5px" class="link1 d-flex align-items-center;">
                       <a style="font-size: 14px;">View More</a> <svg xmlns="http://www.w3.org/2000/svg" width="20"
                         height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -623,7 +678,7 @@
                     <h5 class="card-title">Foundations of global health</h5>
                   </div>
                   <div>
-                    <div style="color: black;gap: 5px" class="d-flex align-items-center;">
+                    <div style="color: black;gap: 5px" class="link2 d-flex align-items-center;">
                       <a style="font-size: 14px;">View More</a> <svg xmlns="http://www.w3.org/2000/svg" width="20"
                         height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"
@@ -648,7 +703,7 @@
                     <h5 class="card-title">Business creativity workshops</h5>
                   </div>
                   <div>
-                    <div style="color: black;gap: 5px" class="d-flex align-items-center;">
+                    <div style="color: black;gap: 5px" class=" link3 d-flex align-items-center;">
                       <a style="font-size: 14px;">View More</a> <svg xmlns="http://www.w3.org/2000/svg" width="20"
                         height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"
